@@ -16,6 +16,7 @@ import {
     sql,
     graph,
     coderschool,
+    roboarm,
     network,
   } from "../assets";
   
@@ -165,11 +166,28 @@ import {
         },
         {
           name: "networking",
-          color: "violet-text-gradient",
+          color: "pink-text-gradient",
         },
       ],
       image: network,
       source_code_link: "https://github.com/rylero/NetworkUtils",
+    },
+    {
+      name: "Robot Arm",
+      description:
+        "A robot arm I built for the robotics merit badge in boy scouts. It was controlled via a bluetooth connected gyroscope.",
+      tags: [
+        {
+          name: "ardunio",
+          color: "green-text-gradient",
+        },
+        {
+          name: "robotics",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: roboarm,
+      source_code_link: "https://github.com/rylero/Robot-Arm",
     },
   ];
   

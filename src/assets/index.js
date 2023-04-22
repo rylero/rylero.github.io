@@ -23,8 +23,10 @@ import coderschool from "./company/coderschool.jpeg";
 
 import booklist from "./booklist.png";
 import network from "./network.png";
+import roboarm from './roboarm.jpg';
 
 export {
+  roboarm,
   logo,
   backend,
   creator,
