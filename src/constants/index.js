@@ -49,15 +49,15 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Web Developer",
       icon: web,
     },
     {
-      title: "React Developer",
+      title: "Unity Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Python Developer",
       icon: backend,
     },
     {
@@ -143,7 +143,7 @@ import {
       points: [
         "Working with kids and teaching them basic coding.",
         "Various game making tools like scratch, pixel pad, and unity.",
-        "Basic Robotics Projects as well.",
+        "Basic Robotics Projects and Tinkercad modeling.",
       ],
     },
    
