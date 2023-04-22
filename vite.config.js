@@ -6,4 +6,10 @@ export default defineConfig({
   manifest: true,
   base: '/rylero.github.io/',
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+    extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
+  },
 })
