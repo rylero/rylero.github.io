@@ -9,6 +9,7 @@
   import vision_image from "./assets/vision.png";
   import weather_image from "./assets/weather.png";
   import robot_arm_image from "./assets/robotarm.png";
+  import pikelabs_image from "./assets/pikelabs.png";
 
   // --- Single Project Data: My Research Section (RPT) ---
   const researchPaper = {
@@ -25,6 +26,16 @@
 
   // --- Timeline Data: Engineering Journey (Combined Academic/Engineering Projects) ---
   const engineeringTimelineEvents = [
+      {
+          date: "Januart 2025 - May 2025",
+          title: "Politiscan",
+          subtitle: "Programmer",
+          blurb: "Our team won the PikeLabs App Design challenge with our app: Politiscan. Politiscan is a brower extension that scans the current new article your looking at and provides information about bias and factuality, opposing and supporting articles, and even supports a chat functionality for further information. This project taught me about websocket protocols, caching, and extension development.",
+          link: "https://github.com/rylero/PikeLabsCompetition",
+          isWIP: false,
+          imageUrl: pikelabs_image,
+          techStack: ['Javascript', 'FastAPI', 'Tavily', 'ExtPay-Js'] 
+      },
       {
           date: "October 2024 - Present",
           title: "Robotics Vision System",
