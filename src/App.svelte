@@ -10,6 +10,8 @@
   import weather_image from "./assets/weather.png";
   import robot_arm_image from "./assets/robotarm.png";
   import pikelabs_image from "./assets/pikelabs.png";
+  import jobcamp_image from "./assets/jobcamp.png";
+  import robotconference_image from "./assets/robot-conference-1.jpg";
 
   // --- Single Project Data: My Research Section (RPT) ---
   const researchPaper = {
@@ -27,6 +29,26 @@
   // --- Timeline Data: Engineering Journey (Combined Academic/Engineering Projects) ---
   const engineeringTimelineEvents = [
       {
+          date: "October 2024 - Present",
+          title: "Robotics Vision System",
+          subtitle: "Lead Programmer",
+          blurb: "Developed a robust vision pipeline using OpenCV and RFDetr object detection. Built for the fastpaced FRC enviorment. Used multiple threads to both capture and process images at the same time. Created a data format for sending object detection results over network tables. This project started with my time on team 972 and I later reworked the new system based on RFDetr for my current team, 6238.",
+          link: "https://github.com/rylero/ObjectDetectionRobot",
+          isWIP: true,
+          imageUrl: vision_image,
+          imageAlt: "Object Detection Output",
+          techStack: ['C++', 'OpenCV', 'RFDetr'] 
+      },
+      {
+          date: "October 2025",
+          title: "WRRF Conference",
+          subtitle: "Guest Speaker",
+          blurb: "I was invited to speak at the WRRF Robotics conference. I lead a talk on Simulation and Autmoated Testing for FRC, diving into tools like JUnit and Mockito. I also covered mechanism physics simulation using WPILib. The talk ended with a discussion on when to unit test and the merits of testing.",
+          isWIP: true,
+          imageUrl: robotconference_image,
+          techStack: ['Java', 'Mockito', 'JUnit5'] 
+      },
+      {
           date: "Januart 2025 - May 2025",
           title: "Politiscan",
           subtitle: "Programmer",
@@ -37,15 +59,13 @@
           techStack: ['Javascript', 'FastAPI', 'Tavily', 'ExtPay-Js'] 
       },
       {
-          date: "October 2024 - Present",
-          title: "Robotics Vision System",
-          subtitle: "Lead Programmer",
-          blurb: "Developed a robust vision pipeline using OpenCV and RFDetr object detection. Built for the fastpaced FRC enviorment. Used multiple threads to both capture and process images at the same time. Created a data format for sending object detection results over network tables.",
-          link: "https://github.com/rylero/ObjectDetectionRobot",
-          isWIP: true,
-          imageUrl: vision_image,
-          imageAlt: "Object Detection Output",
-          techStack: ['C++', 'OpenCV', 'RFDetr'] 
+          date: "July 2023 - March 2025",
+          title: "JobCamp",
+          blurb: "Created a platform for students to be matched with companies in a job shadowing program for my school. Used by over 60 companies and 300 students annually. Originaly built with vue and firebase, it was later converted to use svelte, sveltekit and a custom backend with primsa for database management and lucia-auth for login.",
+          link: "https://jobcamp.org/about",
+          isWIP: false,
+          imageUrl: jobcamp_image,
+          techStack: ['Typescript', "SvelteKit", "PrismaDB", "Lucia-Auth", "Postgress", "Tailwind"] 
       },
       {
           date: "December 2020",
