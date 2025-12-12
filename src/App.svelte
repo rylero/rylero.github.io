@@ -7,6 +7,8 @@
   // User edits: Added image import (assuming the 'assets' folder is structured correctly)
   import research_image from "./assets/research.png";
   import vision_image from "./assets/vision.png";
+  import weather_image from "./assets/weather.png";
+  import robot_arm_image from "./assets/robotarm.png";
 
   // --- Single Project Data: My Research Section (RPT) ---
   const researchPaper = {
@@ -33,6 +35,26 @@
           imageUrl: vision_image,
           imageAlt: "Object Detection Output",
           techStack: ['C++', 'OpenCV', 'RFDetr'] 
+      },
+      {
+          date: "December 2020",
+          title: "Weather Station",
+          blurb: "Created a weather station mounted on my roof using a rasperry pi and sensors from adafruit. It used Influx DB and a Grafana Dashboard for visualization and has been running for almost 6 years now!",
+          link: "https://github.com/rylero/WeatherStation",
+          isWIP: false,
+          imageUrl: weather_image,
+          imageAlt: "Graphs of our collected weather data",
+          techStack: ['Python', 'Influx DB', 'Grafana'] 
+      },
+      {
+          date: "September 2020",
+          title: "Robot Arm",
+          blurb: "Built a Robot Arm for the Robotics Merit Badge in Boy Scouts. It used a biking glove with an arduino, gyroscope, and bluetooth module mounted on it as a controller. The robot used an arduino to control the servos, which were powered by a PC power supply I took apart.",
+          link: "https://github.com/rylero/Robot-Arm",
+          isWIP: false,
+          imageUrl: robot_arm_image,
+          imageAlt: "Graphs of our collected weather data",
+          techStack: ['Arduino'] 
       },
   ];
   
