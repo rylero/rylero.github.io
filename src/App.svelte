@@ -6,70 +6,34 @@
   import profile_image from './assets/profile.png';
   // User edits: Added image import (assuming the 'assets' folder is structured correctly)
   import research_image from "./assets/research.png";
+  import vision_image from "./assets/vision.png";
 
   // --- Single Project Data: My Research Section (RPT) ---
   const researchPaper = {
       date: "Fall 2026",
-      title: "Rotating Policy Training",
+      title: "IPPO Learns the Game, Not the Team",
       subtitle: "Submitting to IROS 2026",
-      blurb: "Traditional Multi-Agent Reinforcement Learning (MARL) typically focuses on homogeneous teams, leaving heterogeneous agents (teammates with differing abilities or unknown policies) relatively underexplored. This paper introduces <strong>Rotating Policy Training (RPT)</strong>, a novel paradigm that co-trains policies of different architectures. Inspired by league play, RPT rotates teammates through various policy combinations to expose the target agent to unique play styles and skill levels. Applied to the collaborative HeMAC enviorment, RPT outperforms standard MARL baselines when generalizing to novel, unseen teammate policies.",
-      link: "https://github.com/rylero/RPT",
+      blurb: "Our research focused on evaluating IPPOs ability to learn the underlying game, rather than just learning to react to its teammate policies. Created a system called Rotation Policy Training (RPT) to evaluate how much adding novel training partners increases a models generalizability. The project used the SKRL framework with custom meta policies objects that allowed for switching teammate networks mid training.",
+      link: "https://arxiv.org/abs/2512.08877",
       isWIP: true,
       imageUrl: research_image,
       imageAlt: "Screenshot of the collaborative HeMAC environment where training took place",
-      techStack: ['Python', 'PyTorch', 'MARL', 'RayLib', 'PettingZoo'] 
+      techStack: ['Python', 'PyTorch', 'MARL', 'SKRL', 'PettingZoo'] 
   };
 
   // --- Timeline Data: Engineering Journey (Combined Academic/Engineering Projects) ---
   const engineeringTimelineEvents = [
-      // 1. Robotics Vision System Rework (from original academicEvents)
       {
-          date: "Spring 2026",
-          title: "Robotics Vision System Rework",
-          subtitle: "Research Assistant Project",
-          blurb: "Developed a robust vision pipeline using OpenCV and a stereo camera setup to improve object detection and 3D localization accuracy for a custom robotic arm. Transitioned the system from synchronous processing to an asynchronous, multi-threaded framework, reducing latency by 40%.",
-          link: "#",
-          isWIP: false,
-          imageUrl: "https://placehold.co/400x200/f87171/ffffff?text=Robotics+Vision+Setup",
-          imageAlt: "3D Localization Robotics Setup",
-          techStack: ['C++', 'OpenCV', 'ROS2', 'YAML', 'Stereo Vision'] 
+          date: "October 2024 - Present",
+          title: "Robotics Vision System",
+          subtitle: "Lead Programmer",
+          blurb: "Developed a robust vision pipeline using OpenCV and RFDetr object detection. Built for the fastpaced FRC enviorment. Used multiple threads to both capture and process images at the same time. Created a data format for sending object detection results over network tables.",
+          link: "https://github.com/rylero/ObjectDetectionRobot",
+          isWIP: true,
+          imageUrl: vision_image,
+          imageAlt: "Object Detection Output",
+          techStack: ['C++', 'OpenCV', 'RFDetr'] 
       },
-      // 2. Personal Portfolio Website (from original academicEvents)
-      {
-          date: "Summer 2025",
-          title: "Personal Portfolio Website (v2)",
-          subtitle: "Side Project",
-          blurb: "Designed and implemented a modern, responsive developer portfolio from scratch using SvelteKit and Tailwind CSS. The design focuses on clean aesthetics and performance, structured around a clear timeline of academic and professional work.",
-          link: "#",
-          isWIP: false,
-          imageUrl: "https://placehold.co/400x200/22c55e/ffffff?text=Svelte+App+Screenshot",
-          imageAlt: "Portfolio Website Screenshot",
-          techStack: ['Svelte', 'Tailwind CSS', 'TypeScript', 'Vite'] 
-      },
-      // 3. Autonomous Navigation System (from original engineeringEvents)
-      {
-          date: "Fall 2024",
-          title: "Autonomous Navigation System",
-          subtitle: "Capston Project",
-          blurb: "Designed and implemented a path planning and obstacle avoidance system for a scaled autonomous vehicle using sensor fusion (LiDAR and Camera) and a state machine approach. Achieved 95% navigation success rate in varied environments.",
-          link: "#",
-          isWIP: false,
-          imageUrl: "https://placehold.co/400x200/9333ea/ffffff?text=Capston+Vehicle+Mockup",
-          imageAlt: "Autonomous Vehicle Path Planning visualization",
-          techStack: ['Python', 'LiDAR', 'Camera', 'Path Planning', 'MicroPython'] 
-      },
-      // 4. Microcontroller Firmware Development (from original engineeringEvents)
-      {
-          date: "Spring 2024",
-          title: "Microcontroller Firmware Development",
-          subtitle: "Coursework",
-          blurb: "Developed low-level firmware in C for an ARM Cortex-M micro-controller to manage motor control, sensor data acquisition, and communication protocols (I2C, SPI). Focused on optimizing for real-time constraints and power consumption.",
-          link: "#",
-          isWIP: false,
-          imageUrl: "https://placehold.co/400x200/f59e0b/ffffff?text=Embedded+Code+Snippet",
-          imageAlt: "Embedded C code structure",
-          techStack: ['C', 'Embedded Systems', 'ARM Cortex-M', 'I2C', 'SPI'] 
-      }
   ];
   
   // --- Header Data ---

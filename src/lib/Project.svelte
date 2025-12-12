@@ -26,10 +26,9 @@
 </script>
 
 <!-- Project Card (Highly Reusable) -->
-<div class="bg-white p-6 md:pt-6 md:p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border-2 border-gray-300 flex flex-col lg:flex-row gap-6">
-    
+<div class="bg-white p-6 md:pt-6 md:p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border-2 border-gray-300 flex flex-col gap-6">
     <!-- Left: Project Details -->
-    <div class="lg:w-2/3">
+    <div class="w-full">
         <a href={link} class="flex flex-col sm:flex-row sm:items-center sm:justify-start gap-3 mb-2">
             <h3 class="text-xl md:text-2xl font-bold text-gray-800">
                 {title}
@@ -62,7 +61,7 @@
     </div>
 
     <!-- Right: Image Placeholder -->
-    <div class="lg:w-1/3 flex justify-center items-center">
+    <div class="w-full flex justify-center items-center">
         <div class="w-full max-w-xs p-3 bg-gray-50 rounded-lg border-2 border-cyan-300 shadow-inner">
             <img 
                 src={imageUrl} 
