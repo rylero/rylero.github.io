@@ -44,7 +44,7 @@
           title: "WRRF Conference",
           subtitle: "Guest Speaker",
           blurb: "I was invited to speak at the WRRF Robotics conference. I lead a talk on Simulation and Autmoated Testing for FRC, diving into tools like JUnit and Mockito. I also covered mechanism physics simulation using WPILib. The talk ended with a discussion on when to unit test and the merits of testing.",
-          isWIP: true,
+          isWIP: false,
           imageUrl: robotconference_image,
           techStack: ['Java', 'Mockito', 'JUnit5'] 
       },
