@@ -12,6 +12,7 @@
   import pikelabs_image from "./assets/pikelabs.png";
   import jobcamp_image from "./assets/jobcamp.png";
   import robotconference_image from "./assets/robot-conference-1.jpg";
+  import champs_image from "./assets/frc-worlds-1.jpg";
 
   // --- Single Project Data: My Research Section (RPT) ---
   const researchPaper = {
