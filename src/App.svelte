@@ -28,7 +28,17 @@
 
   // --- Timeline Data: Engineering Journey (Combined Academic/Engineering Projects) ---
   const engineeringTimelineEvents = [
-      {
+       {
+          date: "October 2025 - Present",
+          title: "Robotics FRC Team 6238",
+          subtitle: "Team Captain",
+          blurb: "Elected captain of a 25-person community based FRC team, the Popcorn Penguins. Responsibilities include teaching, planning, and goal setting. Created mini-lessons for programming, deploying code to the robot, and more.",
+          link: "https://popcornpenguins.com/",
+          isWIP: false,
+          imageUrl: champs_image,
+          imageAlt: "Discussing team strategy at World Championships 2025"
+      },     
+      {  
           date: "October 2024 - Present",
           title: "Robotics Vision System",
           subtitle: "Lead Programmer",
@@ -36,7 +46,7 @@
           link: "https://github.com/rylero/ObjectDetectionRobot",
           isWIP: true,
           imageUrl: vision_image,
-          imageAlt: "Object Detection Output",
+          imageAlt: "Object detection output",
           techStack: ['C++', 'OpenCV', 'RFDetr'] 
       },
       {
@@ -87,7 +97,7 @@
           link: "https://github.com/rylero/Robot-Arm",
           isWIP: false,
           imageUrl: robot_arm_image,
-          imageAlt: "Me, wearing the controller glove with the robot arm",
+          imageAlt: "Robot arm and me, wearing the controller glove",
           techStack: ['Arduino'] 
       },
   ];
