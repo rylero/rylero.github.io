@@ -46,6 +46,7 @@
           blurb: "I was invited to speak at the WRRF Robotics conference. I led a talk on Simulation and Autmoated Testing for FRC, diving into tools like JUnit and Mockito. I also covered mechanism physics simulation using WPILib. The talk ended with a discussion on when to unit test and the merits of testing.",
           isWIP: false,
           imageUrl: robotconference_image,
+          imageAlt: "Speaking at WRRF",
           techStack: ['Java', 'Mockito', 'JUnit5'] 
       },
       {
@@ -56,6 +57,7 @@
           link: "https://github.com/rylero/PikeLabsCompetition",
           isWIP: false,
           imageUrl: pikelabs_image,
+          imageAlt: "Web extension to detect bias and factuality in online news articles",
           techStack: ['Javascript', 'FastAPI', 'Tavily', 'ExtPay-Js'] 
       },
       {
@@ -65,6 +67,7 @@
           link: "https://jobcamp.org/about",
           isWIP: false,
           imageUrl: jobcamp_image,
+          imageAlt: "Website for company hosts and high school students looking to shadow careers",
           techStack: ['Typescript', "SvelteKit", "PrismaDB", "Lucia-Auth", "Postgress", "Tailwind"] 
       },
       {
