@@ -12,7 +12,7 @@
   import pikelabs_image from "./assets/pikelabs.png";
   import jobcamp_image from "./assets/jobcamp.png";
   import robotconference_image from "./assets/robot-conference-1.jpg";
-  import champs_image from "./assets/frc-worlds-1.jpg";
+  import robotics_image from "./assets/robotics.jpg";
 
   // --- Single Project Data: My Research Section (RPT) ---
   const researchPaper = {
@@ -36,7 +36,7 @@
           blurb: "Elected captain of a 25-person community based FRC team, the Popcorn Penguins. Responsibilities include teaching, planning, and goal setting. Created mini-lessons for programming, deploying code to the robot, and more.",
           link: "https://popcornpenguins.com/",
           isWIP: false,
-          imageUrl: champs_image,
+          imageUrl: robotics_image,
           imageAlt: "Discussing team strategy at World Championships 2025"
       },     
       {  
@@ -67,7 +67,7 @@
           blurb: "Our team won the PikeLabs App Design challenge with our app: Politiscan. Politiscan is a brower extension that scans the current news article you're viewing and provides information about bias and factuality, opposing and supporting articles, and even supports a chat functionality for further information. Through this project, I learn about websocket protocols, caching, and extension development.",
           link: "https://github.com/rylero/PikeLabsCompetition",
           isWIP: false,
-          imageUrl: pikelabs_image,
+          videoUrl: "3fjzX_1x_xc",
           imageAlt: "Web extension to detect bias and factuality in online news articles",
           techStack: ['Javascript', 'FastAPI', 'Tavily', 'ExtPay-Js'] 
       },

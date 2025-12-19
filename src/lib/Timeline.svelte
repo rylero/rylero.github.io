@@ -1,6 +1,7 @@
 <script>
     import Project from "./Project.svelte";
-    
+    import VideoProject from "./VideoProject.svelte";
+
     // Define props for the component using Svelte Runes ($props)
     let { events } = $props();
 </script>
@@ -32,16 +33,31 @@
             <!-- Project Component -->
             <!-- Wraps the project card. The card will naturally fill the remaining width. -->
             <div class="transition-transform duration-300 hover:translate-x-1">
-                <Project 
-                    title={event.title}
-                    subtitle={event.subtitle}
-                    blurb={event.blurb}
-                    link={event.link}
-                    isWIP={event.isWIP}
-                    imageUrl={event.imageUrl}
-                    imageAlt={event.imageAlt}
-                    techStack={event.techStack}
-                />
+                {#if event.videoUrl}
+                    <!-- RENDER VIDEO COMPONENT if videoUrl exists -->
+                    <!-- Note: We map event.videoUrl to the 'videoId' prop expected by the video component -->
+                    <VideoProject 
+                        title={event.title}
+                        subtitle={event.subtitle}
+                        blurb={event.blurb}
+                        link={event.link}
+                        isWIP={event.isWIP}
+                        videoId={event.videoUrl} 
+                        techStack={event.techStack}
+                    />
+                {:else}
+                    <!-- RENDER IMAGE COMPONENT (Fallback/Default) -->
+                    <Project 
+                        title={event.title}
+                        subtitle={event.subtitle}
+                        blurb={event.blurb}
+                        link={event.link}
+                        isWIP={event.isWIP}
+                        imageUrl={event.imageUrl}
+                        imageAlt={event.imageAlt}
+                        techStack={event.techStack}
+                    />
+                {/if}
             </div>
         </div>
     {/each}
